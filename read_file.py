@@ -23,7 +23,7 @@
 #         # записать test и data[1] в базу
 #
 #
-#
+#a
 #
 #
 # con = sqlite3.connect('db.sqlite3')
@@ -130,5 +130,4 @@
 # b = ["1a","1s","1d"]
 # c = dict(zip(a,b))
 # print(c)
-
 

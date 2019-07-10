@@ -54,3 +54,11 @@ class Comments(models.Model):
 
     comments_text = models.TextField()
     comments_article = models.ForeignKey(Article,on_delete=models.PROTECT)
+
+
+class Unique_set(models.Model):
+    UserAgent = models.TextField()
+    IP_user = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.IP_user

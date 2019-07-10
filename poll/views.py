@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 from django.urls import reverse
 from django.utils import timezone
 from django.views import generic
-from .models import Choice, Question, Phonebase, Article, Comments
+from .models import Choice, Question, Phonebase, Article, Comments, Unique_set
 from .forms import ChatForm
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
@@ -15,7 +15,6 @@ import tflearn
 import random
 import json
 import pickle
-
 
 
 def calculator(request):
@@ -39,14 +38,38 @@ def Tank(request):
 	
 def order(request):
 	return render(request, 'poll/order.html')
+
+
+
 	
 def unique(request):
-	return render(request, 'poll/unique.html')	
+	return render(request, 'poll/unique.html')
+
+
 	
 def all(request):
-	n = ["fedor",'misha','gena']
-	return render(request, 'poll/ss.html',context={'name':n})
-	
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+        user_agent = request.META.get('HTTP_USER_AGENT')
+        name_host = request.META.get('SERVER_PORT')
+        method = request.META.get('REQUEST_METHOD')
+
+        # Unique_set.objects.create(UserAgent=user_agent, IP_user=ip)
+        asq = Unique_set.objects.get_or_create(UserAgent=user_agent, IP_user=ip)
+        if asq[1] == False:
+            data = {"ip": ip, "user_agent": user_agent, "name_host": name_host, "method": method}
+            return render(request, 'poll/all.html', context=data)
+
+        return render(request, 'poll/unique.html')
+
+
+
+
+
+
 	
 class IndexView(generic.ListView):
     template_name = 'poll/index.html'
@@ -144,7 +167,7 @@ def chat(request):
 
     return render(request, 'poll/chat.html',context={'name':out})
 
-"""CHAT"""
+"""CHAT  END"""
 
 
 def basic_one(request):
@@ -166,10 +189,6 @@ def articles(request):
 def article(request,article_id=2):
     return render(request, 'poll/article.html', {'article': Article.objects.get(id=article_id), "comments": Comments.objects.filter(comments_article_id=article_id)})
 
-
-
-#
-#
 
 
 

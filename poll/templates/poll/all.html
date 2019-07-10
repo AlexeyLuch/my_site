@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 {% load static %}
 {% load bootstrap3 %}
 {% load i18n %}
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>luch</title>
  
+
 <!--link-->
-<!--link-->
-<link rel="stylesheet" href="{% static "css/main.css" %}" type="text/css">
-<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
-<link rel="stylesheet" href="{% static "css/responsive.css" %}" type="text/css">
-<link rel="icon" href= "{% static "img/favicon.ico" %}">
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+
+<link rel="icon" href= "{% static 'img/favicon.ico' %}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 <!--script-->
@@ -20,11 +21,16 @@
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <!--meta-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body::-webkit-scrollbar {
+    width: 0 !important;
+}
+</style>
 
 
 </head>
@@ -61,7 +67,7 @@
         </div>      
       </div>
     </div>
-	
+
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -73,7 +79,7 @@
     </a>
 </div>
 
-  
+
 <div class="container text-center">   
     <ul id="navbar">
 	   <a href="/script" class="btn btn-dark">Страница скриптов</a>
@@ -85,60 +91,62 @@
       <a href="/basicview" class="btn btn-danger">basic_views</a>
       <a href="/articles/all" class="btn btn-secondary">articles/all</a>
  <button type="button" class="btn btn-lg btn-danger" id= "popover" data-toggle="popover" title="Popover title" data-content="It is my firs popover. It's very engaging. Right?">Click to toggle popover</button>
-
       <script type="text/javascript">
       $(function () {
   $('[data-toggle="popover"]').popover()
 })
 </script>
+  <h3>Your Data</h3><br>
+  <div class="container">
 
-      <div class="ct-chart ct-golden-section"></div>
-<script>
-	new Chartist.Line('.ct-golden-section', {
-    labels: ['День 1', 'День 2', 'День 3', 'День 4', 'День 5','День 6', 'День 7', 'День 8', 'День 9', 'День 10', 'День 11', 'День 12', 'День 13', 'День 14','День 15', 'День 16', 'День 17', 'День 18', 'День 19'],
-        series: [
-            [12, 9, 1, 50, 4,12, 9, 1, 5, 4],
-            [2, 1, 4.7, 5.5, 8,2, 1, 4.7, 5.5, -8],
-
-        ]
-    }, {
-        fullWidth: true,
-        chartPadding: {
-            right: 0,
-            top: 50
-
-        }
-});
-</script>
-    </ul> 
-  <h3>What We Do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
+      <div class="row">
+      <div class="col-lg-5 ">
+        <div class="view overlay z-depth-1-half">
+        <div class="well" >
+         <h4>Your ip: <b>{{ ip }}</b></h4>
+        </div>
+            <div class="mask rgba-white-light"></div>
+        </div>
       </div>
-      <div class="well">
-       <p>Some text..</p>
+      <div class="col-lg-5">
+        <div class="view overlay z-depth-1-half">
+        <div class="well">
+         <h4>Get or Post : <b>{{ method }}</b></h4>
+        </div>
+            <div class="mask rgba-white-light"></div>
+        </div>
       </div>
+      <div class="col-lg-5">
+
+
+        <div class="well">
+         <p><h4>Your port: <b>{{ name_host }}</b></h4></p>
+        </div>
+            <div class="mask rgba-white-light"></div>
+      </div>
+      <div class="col-lg-5">
+        <div class="well">
+         <p><h4>Your name : <b>{{ user }}</b></h4></p>
+            <div class="mask rgba-white-light"></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="well">
+         <p><h4>Your User Agent : <b>{{ user_agent }}</b></h4></p>
+        </div>
+            <div class="mask rgba-white-light"></div>
+      </div>
+    </div>
     </div>
   </div>
-</div><br>
+
 
 
   <!-- Footer -->
 <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
   <!-- Footer Elements -->
   <div class="container">
-
+    <div class="ct-chart ct-golden-section"></div>
     <!--Grid row-->
     <div class="row">
 
@@ -245,7 +253,54 @@
   <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
+		<canvas id = "canvas" style="display: block;"> browser is not supported </canvas>
 
+		<script>
+			 var
+					canv = document.getElementById("canvas"),
+					ctx  = canv.getContext("2d");
+			 canv.width = window.innerWidth;
+			 canv.height = window.innerHeight;
+
+			 // Code
+			 var x = 900;
+			 var y = 900;
+			 ctx.fillStyle = "magenta";
+			 ctx.fillRect(x,y,300,200);
+
+			 var timerId = setInterval(function() {
+
+			 	ctx.fillRect(x-=10,y-=10,300,200);
+
+              document.body.scrollTop = document.documentElement.scrollTop = 99999;
+			 },100);
+
+			 setTimeout(function() {
+  clearInterval(timerId);
+  alert( 'Go to the top' );
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}, 5000);
+		</script>
+<script>
+    var c = ["s"]
+	new Chartist.Line('.ct-golden-section', {
+
+    labels: c,
+        series: [
+            [12, 9, 1, 50, 4,12, 9, 1, 5, 4],
+            [2, 1, 4.7, 5.5, 8,2, 1, 4.7, 5.5, -8],
+
+        ]
+    }, {
+        fullWidth: true,
+        chartPadding: {
+            right: 0,
+            top: 50
+
+        }
+});
+</script>
 </body>
+
 </html>

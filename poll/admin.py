@@ -1,10 +1,11 @@
 from django.contrib import admin
 
-from .models import Question,Phonebase,Tank,Article,Comments
+from .models import Question,Phonebase,Tank,Article,Comments,Unique_set
 
 admin.site.register(Question)
 admin.site.register(Phonebase)
 admin.site.register(Tank)
+admin.site.register(Unique_set)
 
 class ArticleInline(admin.StackedInline):
     model = Comments

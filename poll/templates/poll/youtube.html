@@ -1,66 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Monster Shoes</title>
-    <meta name="description" content="Best Shoes on Ukraine Лучшая обувь в Украине"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-
-
-
-
+	<meta charset="utf-8">
 </head>
-<body>
-<section class="hero">
-		<header>
+<body style="margin: 0;">
+		<canvas id = "canvas" style="display: block;"> browser is not supported </canvas>
 
-            </div>
-			<div class="wrapper">
+		<script>
+			 var
+					canv = document.getElementById("canvas"),
+					ctx  = canv.getContext("2d");
+			 canv.width = window.innerWidth;
+			 canv.height = window.innerHeight;
 
-				<a href="#" class="hamburger"></a>
-				<nav>
-					<ul>
-						<li><a href="#">Buy</a></li>
-						<li><a href="#">Rent</a></li>
-						<li><a href="#">Sell</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-					<a href="#" class="login_btn">Login</a>
-				</nav>
-			</div>
-			<div id="header">
-                 <div class="logo1">
-                     <a href="ссылка_на_главную">
-                <div class="ct-chart ct-golden-section"></div>
-
-                 </a>
-				 </div>
-			</div>
-		</header>
-
-	<footer>
-
-		        <div id='chart_div' style='width: 100%; height: 500px;'></div>
-
-	</footer><!--  end header section  -->
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-	<script>
-	new Chartist.Line('.chart1', {
-    labels: ['День 1', 'День 2', 'День 3', 'День 4', 'День 5'],
-        series: [
-            [12, 9, 3, 8, 4],
-            [2, 1, 4.7, 5.5, 8]
-        ]
-    }, {
-        fullWidth: true,
-        chartPadding: {
-            right: 50
-        }
-});
-</script>
-</body>
-</html>
+<!--			  Code      -->
+			 var x = 50;
+			 ctx.fillStyle = "magenta";
+			 ctx.fillRect(x,50,300,200);
 
 
+
+		</script>
+
+<!-- Canvas движение елемента
+
+			 setInterval(function() {
+				ctx.fillStyle = 'white';
+			 	ctx.fillRect(0,0,canv.width,canv.height);
+
+			 	ctx.fillStyle = 'magenta';
+			 	ctx.fillRect(x++,50,300,200);
+
+			 }, 100);  -->
