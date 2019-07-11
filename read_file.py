@@ -130,4 +130,36 @@
 # b = ["1a","1s","1d"]
 # c = dict(zip(a,b))
 # print(c)
+"""Список простых чисел"""
+# from math import sqrt
+# n = int(input("n="))
+# lst=[]
+# for i in range(2, n+1):
+#     if (i > 10):
+#         if (i%2==0) or (i%10==5):
+#             continue
+#     for j in lst:
+#         if j > int((sqrt(i)) + 1):
+#             lst.append(i)
+#             break
+#         if (i % j == 0):
+#             break
+#     else:
+#         lst.append(i)
+# print (lst)
 
+"""Простое число или нет"""
+# def index(rest):
+#     c = 0
+#     i =1
+#     while i <= rest:
+#         i += 1
+#         if rest % i == 0:
+#             c+=1
+#             if c >2:
+#                 print(False)
+#                 break
+#
+#     if c < 2:
+#         print(True)
+# index(2)

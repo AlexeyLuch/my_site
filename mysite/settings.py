@@ -34,6 +34,7 @@ TEMPLATE_DIRS = (
 # Application definition
 
 INSTALLED_APPS = [
+    'jet',
 	'poll.apps.PollConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -139,5 +140,7 @@ SITE_ID = 1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'poll/static') # добавил для отображения новой админки
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)

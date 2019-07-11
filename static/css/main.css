@@ -32,3 +32,17 @@ body{
 
       }
 
+        .btn {
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+              transition:         transform .8s ease-in-out;
+    }
+    .btn:hover {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+
+
+    body::-webkit-scrollbar {
+        width: 0 !important;
+    }
+

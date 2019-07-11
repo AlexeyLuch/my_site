@@ -39,6 +39,8 @@ class Tank(models.Model):
     pub_date = models.DateTimeField('date published')
     crew = models.IntegerField(default=3)
 
+
+
 class Article(models.Model):
     class Meta():
         db_table = "article"
@@ -48,12 +50,17 @@ class Article(models.Model):
     article_date = models.DateTimeField()
     article_like = models.IntegerField(default=0)
 
+
+
 class Comments(models.Model):
     class Meta():
         db_table = "comments"
 
     comments_text = models.TextField()
     comments_article = models.ForeignKey(Article,on_delete=models.PROTECT)
+
+
+
 
 
 class Unique_set(models.Model):

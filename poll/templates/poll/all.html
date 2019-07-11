@@ -9,8 +9,9 @@
 
 <!--link-->
 
-<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
 
 <link rel="icon" href= "{% static 'img/favicon.ico' %}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -21,16 +22,13 @@
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
 <!--meta-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body::-webkit-scrollbar {
-    width: 0 !important;
-}
-</style>
+
+
 
 
 </head>
@@ -255,33 +253,33 @@ body::-webkit-scrollbar {
 </footer>
 		<canvas id = "canvas" style="display: block;"> browser is not supported </canvas>
 
-		<script>
-			 var
-					canv = document.getElementById("canvas"),
-					ctx  = canv.getContext("2d");
-			 canv.width = window.innerWidth;
-			 canv.height = window.innerHeight;
+<!--		<script>-->
+<!--			 var-->
+<!--					canv = document.getElementById("canvas"),-->
+<!--					ctx  = canv.getContext("2d");-->
+<!--			 canv.width = window.innerWidth;-->
+<!--			 canv.height = window.innerHeight;-->
 
-			 // Code
-			 var x = 900;
-			 var y = 900;
-			 ctx.fillStyle = "magenta";
-			 ctx.fillRect(x,y,300,200);
+<!--			 // Code-->
+<!--			 var x = 900;-->
+<!--			 var y = 900;-->
+<!--			 ctx.fillStyle = "magenta";-->
+<!--			 ctx.fillRect(x,y,300,200);-->
 
-			 var timerId = setInterval(function() {
+<!--			 var timerId = setInterval(function() {-->
 
-			 	ctx.fillRect(x-=10,y-=10,300,200);
+<!--			 	ctx.fillRect(x-=10,y-=10,300,200);-->
 
-              document.body.scrollTop = document.documentElement.scrollTop = 99999;
-			 },100);
+<!--              document.body.scrollTop = document.documentElement.scrollTop = 99999;-->
+<!--			 },100);-->
 
-			 setTimeout(function() {
-  clearInterval(timerId);
-  alert( 'Go to the top' );
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
+<!--			 setTimeout(function() {-->
+<!--  clearInterval(timerId);-->
+<!--  alert( 'Go to the top' );-->
+<!--  document.body.scrollTop = document.documentElement.scrollTop = 0;-->
 
-}, 5000);
-		</script>
+<!--}, 5000);-->
+<!--		</script>-->
 <script>
     var c = ["s"]
 	new Chartist.Line('.ct-golden-section', {
@@ -302,5 +300,8 @@ body::-webkit-scrollbar {
 });
 </script>
 </body>
+<style>
 
+
+</style>
 </html>

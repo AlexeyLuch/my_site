@@ -170,7 +170,7 @@ def chat(request):
 """CHAT  END"""
 
 
-def basic_one(request):
+def basic_one():
     view = "basic_one"
     html = "<html><body> this is %s view </body></html>" % view
     return HttpResponse(html)
