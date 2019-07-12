@@ -6,29 +6,55 @@
 <body style="margin: 0;">
 		<canvas id = "canvas" style="display: block;"> browser is not supported </canvas>
 
-		<script>
-			 var
-					canv = document.getElementById("canvas"),
-					ctx  = canv.getContext("2d");
-			 canv.width = window.innerWidth;
-			 canv.height = window.innerHeight;
+<!--{% load staticfiles %}-->
+<!--<a href="http://vk.com/share.php?url=https://evileg.com/ru/{{ article.get_absolute_url }}"-->
+<!--   target="_blank" rel="nofollow">-->
+<!--    <img src="{% static 'images/social/vk.png' %}">-->
+<!--</a>-->
+<!--<a href="https://twitter.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"-->
+<!--   target="_blank" rel="nofollow">-->
+<!--    <img src="{% static 'images/social/twitter.png' %}">-->
+<!--</a>-->
+<!--<a href="https://www.facebook.com/sharer/sharer.php?u=https://evileg.com/ru/{{ article.get_absolute_url }}"-->
+<!--   target="_blank" rel="nofollow">-->
+<!--    <img src="{% static 'images/social/facebook.png' %}">-->
+<!--</a>-->
+<!--<a href="https://plus.google.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"-->
+<!--   target="_blank" rel="nofollow">-->
+<!--    <img src="{% static 'images/social/google-plus.png' %}">-->
+<!--</a>-->
+<!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"-->
+<!--   target="_blank" rel="nofollow">-->
+<!--    <img src="{% static 'images/social/linkedin.png' %}">-->
+<!--</a>-->
 
-<!--			  Code      -->
-			 var x = 50;
-			 ctx.fillStyle = "magenta";
-			 ctx.fillRect(x,50,300,200);
 
 
+{% load staticfiles %}
+<a href="http://vk.com/share.php?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" rel="nofollow">
+    <img src="{% static 'images/social/vk.png' %}">
+</a>
+<a href="https://twitter.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" rel="nofollow">
+    <img src="{% static 'images/social/twitter.png' %}">
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://evileg.com/ru/{{ article.get_absolute_url }}"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" rel="nofollow">
+    <img src="{% static 'images/social/facebook.png' %}">
+</a>
+<a href="https://plus.google.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" rel="nofollow">
+    <img src="{% static 'images/social/google-plus.png' %}">
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" rel="nofollow">
+    <img src="{% static 'images/social/linkedin.png' %}">
+</a>
+</body>
 
-		</script>
-
-<!-- Canvas движение елемента
-
-			 setInterval(function() {
-				ctx.fillStyle = 'white';
-			 	ctx.fillRect(0,0,canv.width,canv.height);
-
-			 	ctx.fillStyle = 'magenta';
-			 	ctx.fillRect(x++,50,300,200);
-
-			 }, 100);  -->

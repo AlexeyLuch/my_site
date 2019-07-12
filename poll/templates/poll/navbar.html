@@ -14,6 +14,28 @@
 {% if request.user.is_authenticated %}
 <a href="/accounts/logout/">Выйти</a>
 {% else %}
+	  <div class="">
+			<a href="hhttps://www.instagram.com/share.php?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/inst.png' %}" style="height:34px;width:34px;">
+			</a>
+			<a href="https://twitter.com/share?url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/twee.png' %}" style="height:34px;width:34px;">
+			</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/fb.png' %}"style="height:34px;width:34px;">
+			</a>
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://evileg.com/ru/{{ article.get_absolute_url }}"
+			   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			   target="_blank" rel="nofollow">
+				<img src="{% static 'img/link.png' %}" style="height:34px;width:34px;">
+			</a>
+	  </div>
 <form class="login" id="account_login" method="post" action="{% url 'account_login' %}">{% csrf_token %}
 	<button type="submit" class="btn btn-danger">Вход</button>
 </form>
@@ -22,5 +44,6 @@
 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   <button type="submit" class="btn btn-danger">Регистрация</button>
 </form>
+
 {% endif %}
   </nav>
