@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40088b88-39a5-4eca-a7a2-2cad67550672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/img/fb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/twee.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/templates/poll/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/templates/poll/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/templates/poll/youtube.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/youtube.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/advanced_search_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/advanced_search_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/advanced_search_inactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/calendar_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/close_menu_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ervice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hamburger_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hero (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/hero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/script-logo-footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/search_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/social_media.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,17 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/poll/templates/poll/navbar.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poll/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#a#1;n#nav#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#2;n#nav#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#3;n#nav#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#4;n#nav#0;n#!!top" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/poll/templates/poll/chat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -64,20 +52,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/poll/templates/poll/all.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -91,14 +70,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/poll/templates/poll/chat.html" />
         <option value="$PROJECT_DIR$/poll/templates/poll/ss.html" />
         <option value="$PROJECT_DIR$/poll/urls.py" />
         <option value="$PROJECT_DIR$/poll/templates/poll/index12.html" />
         <option value="$PROJECT_DIR$/poll/forms.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/poll/admin.py" />
-        <option value="$PROJECT_DIR$/poll/views.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/poll/models.py" />
         <option value="$PROJECT_DIR$/read_file.py" />
@@ -109,6 +86,8 @@
         <option value="$PROJECT_DIR$/poll/templates/poll/all.html" />
         <option value="$PROJECT_DIR$/poll/templates/poll/youtube.html" />
         <option value="$PROJECT_DIR$/poll/templates/poll/navbar.html" />
+        <option value="$PROJECT_DIR$/poll/views.py" />
+        <option value="$PROJECT_DIR$/poll/templates/poll/chat.html" />
       </list>
     </option>
   </component>
@@ -124,6 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,42 +114,12 @@
             <path>
               <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="NewProject" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewProject" type="462c0819:PsiDirectoryNode" />
-              <item name="poll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewProject" type="462c0819:PsiDirectoryNode" />
-              <item name="poll" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewProject" type="462c0819:PsiDirectoryNode" />
-              <item name="poll" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="poll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewProject" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NewProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,13 +346,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/poll/templates/poll/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poll/migrations/0006_unique_set.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -505,16 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poll/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1388">
-          <caret line="189" column="74" selection-start-line="189" selection-start-column="74" selection-end-line="189" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poll/templates/poll/index12.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -542,58 +475,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poll/templates/poll/all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poll/templates/poll/youtube.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="33" selection-start-line="33" selection-end-line="57" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/fb.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/twee.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_active.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_hover.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_inactive.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/close_menu_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/calendar_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/ervice.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_active.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_hover.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/advanced_search_inactive.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/close_menu_icon.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/calendar_icon.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/ervice.jpg" />
     <entry file="file://$PROJECT_DIR$/static/img/fon.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -603,27 +496,13 @@
     <entry file="file://$PROJECT_DIR$/static/img/gun.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/hamburger_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/hero.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/hero (2).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/script-logo-footer.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/search_arrow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/social_media.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/hamburger_icon.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/hero.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/img/hero (2).jpg" />
+    <entry file="file://$PROJECT_DIR$/static/img/logo.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/script-logo-footer.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/search_arrow.png" />
+    <entry file="file://$PROJECT_DIR$/static/img/social_media.png" />
     <entry file="file://$PROJECT_DIR$/static/img/pythonorig.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -641,14 +520,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/poll/templates/poll/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="194">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#1;n#nav#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#2;n#nav#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#3;n#nav#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#4;n#nav#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poll/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poll/templates/poll/youtube.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="33" selection-start-line="33" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poll/templates/poll/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poll/templates/poll/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>

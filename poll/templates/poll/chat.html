@@ -1,16 +1,27 @@
 <!DOCTYPE html>
+{% load static %}
+{% load bootstrap3 %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+        <title>luch</title>
+<!--link-->
+<link rel="icon" href= "{% static 'img/favicon.ico' %}">
+<!--script-->
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
+
+
 <form action="/chat" method="post">{% csrf_token %}
     <label for="your_name">Your question: </label>
     <input id="your_name" type="text" name="your_name" value="">
     <input type="submit" value="OK">
 </form>
 <p>{{ name }}</p>
+
 </body>
 
 </html>

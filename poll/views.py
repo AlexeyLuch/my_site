@@ -137,35 +137,58 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 
+MODEL = None
 
-
-def chat(request):
-    out = "her"
-    if "your_name" in request.POST:
-        with open("intents.json") as file:
-            data = json.load(file)
-
-
-        with open("data.pickle", "rb") as f:
-            words, labels, training, output = pickle.load(f)
+def get_model():
+    global MODEL
+    if MODEL is None:
+        words, labels, training, output = get_hdata()
         net = tflearn.input_data(shape=[None, len(training[0])])
         net = tflearn.fully_connected(net, 8)
         net = tflearn.fully_connected(net, 8)
         net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
         net = tflearn.regression(net)
 
-        model = tflearn.DNN(net)
-        model.load("model.tflearn")
-        results = model.predict([bag_of_words(request.POST["your_name"], words)])
+        MODEL = tflearn.DNN(net)
+        MODEL.load("model.tflearn")
+    return MODEL
+
+DATAA = None
+def get_data():
+    global DATAA
+
+    if DATAA is None:
+        with open("intents.json") as file:
+            DATAA = json.load(file)
+    return DATAA
+
+
+HDATA = None
+def get_hdata():
+    global HDATA
+
+    if HDATA is None:
+        with open("data.pickle", "rb") as f:
+            HDATA = pickle.load(f)
+    return HDATA
+
+
+def chat(request):
+    out = "her"
+    if "your_name" in request.POST:
+        words, labels, training, output = get_hdata()
+        results = get_model().predict([bag_of_words(request.POST["your_name"], words)])
         results_index = numpy.argmax(results)
         tag = labels[results_index]
 
-        for tg in data["intents"]:
+        for tg in get_data()["intents"]:
             if tg['tag'] == tag:
                 responses = tg['responses']
         out=random.choice(responses)
 
     return render(request, 'poll/chat.html',context={'name':out})
+
+
 
 """CHAT  END"""
 
