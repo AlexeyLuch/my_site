@@ -23,7 +23,7 @@
 #         # записать test и data[1] в базу
 #
 #
-#a
+#
 #
 #
 # con = sqlite3.connect('db.sqlite3')
@@ -150,16 +150,37 @@
 
 """Простое число или нет"""
 # def index(rest):
-#     c = 0
-#     i =1
+#     deliteli = 1
+#     i = 1
 #     while i <= rest:
 #         i += 1
 #         if rest % i == 0:
-#             c+=1
-#             if c >2:
+#             print(rest,i)
+#             deliteli +=1
+#             if deliteli >2:
 #                 print(False)
 #                 break
 #
-#     if c < 2:
+#     if deliteli <= 2:
 #         print(True)
-# index(2)
+# index(117)
+
+# fruits = {"apple", "banana", "cherry"}
+# more_fruits = ["orange", "mango", "grapes"]
+#
+# fruits.update(more_fruits)
+# print(fruits)
+# car ={
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(car.get("model"))
+
+""" list comprehensions """
+arr = {1,2,34}
+x = (i for i in arr)
+print(x)
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())

@@ -1,32 +1,24 @@
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+    var c = ["s"]
+	new Chartist.Line('.ct-golden-section', {
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['month', 'Sales', 'Expenses'],
-          ['January',  1000,      400],
-          ['February',  1170,      460],
-          ['March',  660,       1120],
-          ['Aprile',  660,       1120],
-          ['May',  1030,      540],
-          ['June',  1030,      540],
-          ['Jule',  1030,      540],
-          ['August',  1030,      540],
-          ['September',  1030,      540],
-          ['October',  1030,      540],
-          ['November',  1030,      540],
-          ['December',  1030,      540]
+    labels: c,
+        series: [
+            [12, 9, 1, 50, 4,12, 9, 1, 5, 4],
+            [2, 1, 4.7, 5.5, 8,2, 1, 4.7, 5.5, -8],
 
+        ]
+    }, {
+        fullWidth: true,
+        chartPadding: {
+            right: 0,
+            top: 50
 
+        }
+});
 
-        ]);
+document.span.onmouseover = document.span.onmouseout = handler;
+function handler(event) {
+      var audio = document.getElementsByTagName("audio")[0];
+audio.play();
 
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'months',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+}

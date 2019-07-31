@@ -9,6 +9,7 @@ from .models import Choice, Question, Phonebase, Article, Comments, Unique_set
 from .forms import ChatForm
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
+
 stemmer = LancasterStemmer()
 import numpy
 import tflearn
@@ -18,35 +19,33 @@ import pickle
 
 
 def calculator(request):
-	return render(request, 'poll/calculator.html')
+    return render(request, 'poll/calculator.html')
 
 
 def support(request):
     contact_list = Phonebase.objects.all()
-    paginator = Paginator(contact_list, 2) # Show 25 contacts per page
+    paginator = Paginator(contact_list, 2)  # Show 25 contacts per page
     page = request.GET.get('page')
     contacts = paginator.get_page(page)
     return render(request, 'poll/support.html', {'contacts': contacts})
+
 
 def Tank(request):
     contact_list = Tank.objects.all()
-    paginator = Paginator(contact_list, 2) # Show 25 contacts per page
+    paginator = Paginator(contact_list, 2)  # Show 25 contacts per page
     page = request.GET.get('page')
     contacts = paginator.get_page(page)
     return render(request, 'poll/support.html', {'contacts': contacts})
 
-	
+
 def order(request):
-	return render(request, 'poll/order.html')
+    return render(request, 'poll/order.html')
 
 
-
-	
 def unique(request):
-	return render(request, 'poll/unique.html')
+    return render(request, 'poll/unique.html')
 
 
-	
 def all(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
@@ -66,11 +65,6 @@ def all(request):
         return render(request, 'poll/unique.html')
 
 
-
-
-
-
-	
 class IndexView(generic.ListView):
     template_name = 'poll/index.html'
     context_object_name = 'latest_question_list'
@@ -120,8 +114,8 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('poll:results', args=(question.id,)))
 
 
-
 """CHAT"""
+
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -188,29 +182,32 @@ def chat(request):
 
     return render(request, 'poll/chat.html',context={'name':out})
 
-
-
 """CHAT  END"""
 
 
-def basic_one():
+def basic_one(request):
     view = "basic_one"
     html = "<html><body> this is %s view </body></html>" % view
     return HttpResponse(html)
+
 
 def template_two(request):
     view = "template_two"
     return render(request, 'poll/myview.html', {'name': view})
 
+
 def art1icles(request):
     view = "template_two"
     return render(request, 'poll/myview.html', {'name': view})
 
+
 def articles(request):
     return render(request, 'poll/articles.html', {'articles': Article.objects.all()})
 
-def article(request,article_id=2):
-    return render(request, 'poll/article.html', {'article': Article.objects.get(id=article_id), "comments": Comments.objects.filter(comments_article_id=article_id)})
+
+def article(request, article_id=2):
+    return render(request, 'poll/article.html', {'article': Article.objects.get(id=article_id),
+                                                 "comments": Comments.objects.filter(comments_article_id=article_id)})
 
 
 

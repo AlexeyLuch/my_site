@@ -23,7 +23,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-
 <!--meta-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,10 +32,14 @@
 
 </head>
 <body>
+<audio>
+<source src="static/img/1.mp3"></source>
+Your browser isn't invited for super fun audio time.
+</audio>
 <header>
 {% include "poll/navbar.html" %}
 
-										
+
 
 </header>
 
@@ -78,7 +81,7 @@
 </div>
 
 
-<div class="container text-center">   
+<div class="container text-center">
     <ul id="navbar">
 	   <a href="/script" class="btn btn-dark">Страница скриптов</a>
       <a href="/admin" class="btn btn-dark">Admin</a>
@@ -252,53 +255,8 @@
 
 </footer>
 		<canvas id = "canvas" style="display: block;"> browser is not supported </canvas>
-
-		<script>
-			 var
-					canv = document.getElementById("canvas"),
-					ctx  = canv.getContext("2d");
-			 canv.width = window.innerWidth;
-			 canv.height = window.innerHeight;
-
-			 // Code
-			 var x = 900;
-			 var y = 900;
-			 ctx.fillStyle = "magenta";
-			 ctx.fillRect(x,y,300,200);
-
-			 var timerId = setInterval(function() {
-
-			 	ctx.fillRect(x-=10,y-=10,300,200);
-
-              document.body.scrollTop = document.documentElement.scrollTop = 99999;
-			 },100);
-
-			 setTimeout(function() {
-  clearInterval(timerId);
-  alert( 'Go to the top' );
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-}, 2000);
-		</script>
-<script>
-    var c = ["s"]
-	new Chartist.Line('.ct-golden-section', {
-
-    labels: c,
-        series: [
-            [12, 9, 1, 50, 4,12, 9, 1, 5, 4],
-            [2, 1, 4.7, 5.5, 8,2, 1, 4.7, 5.5, -8],
-
-        ]
-    }, {
-        fullWidth: true,
-        chartPadding: {
-            right: 0,
-            top: 50
-
-        }
-});
-</script>
+<script type="text/javascript" src="{% static 'js/all.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/***.js' %}"></script>
 </body>
 <style>
 
