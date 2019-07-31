@@ -10,6 +10,10 @@ from .forms import ChatForm
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 
+# Для загрузки файла
+from .forms import UploadFileForm
+
+
 stemmer = LancasterStemmer()
 import numpy
 import tflearn
@@ -211,6 +215,15 @@ def article(request, article_id=2):
 
 
 
+
+
+def upload_file(request):
+
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+    else:
+        form = UploadFileForm()
+    return render(request, ('poll/articles.html', {'form': form}))
 
 
 
