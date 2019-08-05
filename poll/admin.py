@@ -1,7 +1,6 @@
 from django.contrib import admin
 
 from .models import Question,Phonebase,Tank,Article,Comments,Unique_set
-
 admin.site.register(Question)
 admin.site.register(Phonebase)
 admin.site.register(Tank)
@@ -13,7 +12,7 @@ class ArticleInline(admin.StackedInline):
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    fields = ['article_title','article_text','article_date']
+    fields = ['article_title','article_text','article_date','article_image']
     inlines = [ArticleInline]
     list_filter = ['article_date']
     list_display = ['article_text']
