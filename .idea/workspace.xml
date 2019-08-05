@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40088b88-39a5-4eca-a7a2-2cad67550672" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/templates/poll/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/templates/poll/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/unique.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/unique.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

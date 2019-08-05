@@ -31,12 +31,15 @@
 папа
 мама
 дед
-папа" class="form-control" rows="10"></textarea><br />
+папа" class="form-control" rows="10"></textarea><br/>
+
+<input type="file" id="files" /><br/>
+
 		<input type="button"  id="start" class="btn btn-success" name="delete" value="Удалить дубликаты" />
 </div>
 </div>
 
-
+<a download='result.txt'>Download</a>
 <script>
 function getUnique(s) {
   return [...new Set(s.split("\n"))].join("\n")
@@ -52,8 +55,54 @@ setTimeout(() => {
 }, 1000)
 
 </script>
+<script>
+	let file_name = 'Result.txt';
+const textarea = document.getElementById('strings');
+// editor = CKEDITOR.replace(textarea);
+const files = document.getElementById('files');
+
+// Создать файл
+function generate_file(data){
+    data = new Blob(["\ufeff", [data]], {type:'plain/text'});
+    return window.URL.createObjectURL(data);
+}
+
+// Прочесть файл
+function read_file(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+        const text = reader.result;
+        textarea.value = text;
+        // Для CKEditor вместо строчки выше:
+        // editor.setData(text);
+        make_download(text, file.name);
+    };
+    reader.readAsText(file);
+}
+
+// Создание ссылки для скачивания
+function make_download(content, name = file_name){
+    const download_link = document.getElementsByTagName('a')[3];
+    download_link.innerText = name;
+    download_link.download = name;
+    download_link.href = generate_file(content);
+}
+
+// Вешаем обработчики
+files.addEventListener('change', () => {
+    read_file(files.files[0]);
+    file_name = files.files[0].name;
+}, false);
+
+textarea.onchange = e => make_download(textarea.value)
+/* Для CKEditor, вместо строчки выше пишем -
+editor.on('change', () => {
+    make_download(editor.getData())
+});
+он почему то не хочет работать в сниппетах */
 
 
+</script>
 
 </body>
 <style>
