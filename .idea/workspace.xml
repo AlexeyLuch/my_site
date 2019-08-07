@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40088b88-39a5-4eca-a7a2-2cad67550672" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/zz.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/canvas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/templates/poll/unique.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/unique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
