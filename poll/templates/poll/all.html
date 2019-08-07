@@ -29,6 +29,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<style> img,a[href] { cursor: url(static/img/gun.png), wait; } </style>
 
 
 </head>
@@ -41,7 +42,6 @@ Your browser isn't invited for super fun audio time.
 <header>
 {% include "poll/navbar.html" %}
 
-<!--<canvas width="600" height="400" id="canvas" style="background-color:black;"/>-->
 
 
 </header>
@@ -93,8 +93,7 @@ Your browser isn't invited for super fun audio time.
        <a href="/calculator" class="btn btn-dark">Калькулятор</a>
       <a href="/chat" class="btn btn-warning">Чат</a>
       <a href="/basicview" class="btn btn-danger">basic_views</a>
-      <a href="/articles/all" class="btn btn-secondary">articles/all</a>
- <button type="button" class="btn btn-lg btn-danger" id= "popover" data-toggle="popover" title="Popover title" data-content="It is my firs popover. It's very engaging. Right?">Click to toggle popover</button>
+ <button type="button" class="btn btn-lg btn-danger" style="width:244px;border-radius: 3px;" id= "popover" data-toggle="popover" title="Popover title" data-content="It is my firs popover. It's very engaging. Right?">Click to toggle popover</button>
       <script type="text/javascript">
       $(function () {
   $('[data-toggle="popover"]').popover()

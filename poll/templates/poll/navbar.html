@@ -12,6 +12,7 @@
 						</div>	  <!-- Collapsible content -->
 
 {% if request.user.is_authenticated %}
+<a href="/articles/all" class="btn btn-danger">Личный кабинет</a>
 <a href="/accounts/logout/">Выйти</a>
 {% else %}
 	  <div class="">
