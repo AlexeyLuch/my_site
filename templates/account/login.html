@@ -96,14 +96,22 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
+
 </style>
 
+        <head>
+    <title>reCAPTCHA demo: Simple page</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
 <div class="login-page">
   <div class="form">
 	<form class="login" method="POST" action="{% url 'account_login' %}">
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <div class="g-recaptcha" data-sitekey="6LfFALIUAAAAAOmavXJuXRriuPxsIAB7BameH0zX"></div>
   {% csrf_token %}
   {{ form.as_p }}
   {% if redirect_field_value %}
+
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
   <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
@@ -114,3 +122,4 @@
 
 
 {% endblock %}
+

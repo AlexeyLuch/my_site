@@ -1,8 +1,12 @@
-    html {
+#bootstrap-overrides {
   position: relative;
   z-index: 0;
-
     }
+
+    #parameters{
+    margin-left:6%
+    }
+
 
     canvas {
       position: absolute;
@@ -12,14 +16,19 @@
       bottom: 0;
       width: 100%;
       height: 100%;
-      background: #000;
+      background: #fff;
       z-index: -1;
     }
 
     /* Add a gray background color and some padding to the footer */
-    footer {
+    #grafic {
       background-color: #f2f2f2;
-      padding: 25px;
+      padding: 0px;
+    }
+
+        .img-fluid {
+    width: 70%;
+    height:70%;
     }
 
   .carousel-inner img {
@@ -34,10 +43,7 @@
       display: none;
     }
   }
-      #navbar {
-        margin: 0;
-        padding: 15px
-      }
+
 
       .btn-lg {
     margin-top: 5px;

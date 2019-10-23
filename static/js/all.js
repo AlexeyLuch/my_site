@@ -14,13 +14,13 @@
 
 			 	ctx.fillRect(x-=10,y-=10,300,200);
 
-              document.body.scrollTop = document.documentElement.scrollTop = 0;
+//              document.body.scrollTop = document.documentElement.scrollTop = 0;
 			 },100);
 
 			 setTimeout(function() {
   clearInterval(timerId);
 //  alert( 'Go to the top' );
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
+//  document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 
 }, 2000);

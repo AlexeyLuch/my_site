@@ -4,101 +4,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Удаление дубликатов</title>
- 
-
-<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-
+<title>Удаление дубликатов</title>
 <link rel="icon" href= "{% static 'img/favicon.ico' %}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
-<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
-<!--script-->
-<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<!--script-->
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 
 <body>
-{% include "poll/navbar.html" %}
-<div class="container">
+	{% include "poll/navbar1.html" %}
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<h4 style="color:#ffffff" >Вставте текст для <b style="color:#ff0000">удаление дубликатов строк<b/></h4>
+				<textarea id="strings" type="text" placeholder="" class="form-control" rows="10"></textarea><br/>
 
-<div class="row">
-	<div class="col-sm-9">
-		<h4 style="color:#ffffff" >Вставте текст для удаление дубликатов</h4>
-		<textarea id="strings" type="text" placeholder="
-мама
-папа
-мама
-дед
-папа" class="form-control" rows="10"></textarea><br/>
-
-<input type="file" id="files" /><br/>
-<input type="button"  id="start" class="btn btn-success" name="delete" value="Удалить дубликаты" />
-</div>
-</div>
-
-<a download='result.txt'>Download</a>
-<script>
-function getUnique(s) {
-  return [...new Set(s.split("\n"))].join("\n")
-
-}
-
-start.onclick = () => {
-  strings.value = getUnique(strings.value)
-  var c = textarea.value
-  c = make_download(c)
-
-
-}
-
-	let file_name = 'Result.txt';
-const textarea = document.getElementById('strings');
-// editor = CKEDITOR.replace(textarea);
-const files = document.getElementById('files');
-
-// Прочесть файл
-function read_file(file) {
-    const reader = new FileReader();
-    reader.onload = () => {
-        const text = reader.result;
-        textarea.value = text;
-        make_download(text, file.name);
-    };
-    reader.readAsText(file);
-}
-
-// Вешаем обработчики
-files.addEventListener('change', () => {
-    read_file(files.files[0]);
-    file_name = files.files[0].name;
-}, false);
+					<input type="file" id="files" /><br/>
+					<input type="button"  id="start" class="btn btn-success" name="delete" value="Удалить дубликаты" />
+					<a id="file" style="color:#ff0000" download='result.txt'>  Download</a>
+			</div>
+		</div>
+	</div>
 
 
 
-// Создать файл
-function generate_file(data){
-    data = new Blob(["\ufeff", [data]], {type:'plain/text'});
-    return window.URL.createObjectURL(data);
-}
-
-
-// Создание ссылки для скачивания
-function make_download(content, name = file_name){
-    const download_link = document.getElementsByTagName('a')[3];
-    download_link.innerText = name;
-    download_link.download = name;
-    download_link.href = generate_file(content);
-}
-
-
-
-
-
-</script>
+	<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/unique.js' %}"></script>
 
 </body>
+
+
 <style>
 .container{
 margin-top: 1px;

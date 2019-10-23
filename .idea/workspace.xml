@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40088b88-39a5-4eca-a7a2-2cad67550672" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/all" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poll/templates/poll/navbar1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons.py" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/templates/poll/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/templates/poll/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/templates/poll/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/unique.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/unique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/youtube.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/youtube.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/articles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/zz.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/zz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/unique.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/unique.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,6 +50,7 @@
   <component name="ProjectId" id="1OgKWLi4AMVvevVwnRtOqP17BlW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -108,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
