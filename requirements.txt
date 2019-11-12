@@ -5,5 +5,5 @@ django-bootstrap-form
 tflearn
 numpy
 nltk
-tensorflow
+tensorflow==1.14
 django-jet
