@@ -48,7 +48,10 @@ INSTALLED_APPS = [
 	'django.contrib.sites',
 	'bootstrap3',
 	'bootstrapform',
-	
+    'channels',
+
+    'chat_channel',
+
 
 ]
 
@@ -80,6 +83,16 @@ TEMPLATES = [
     },
 ]
 WSGI_APPLICATION = 'mysite.wsgi.application'
+ASGI_APPLICATION = 'mysite.routing.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`

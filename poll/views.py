@@ -277,8 +277,3 @@ def article(request, article_id=2):
 
 
 
-
-
-
-
-

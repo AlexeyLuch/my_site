@@ -415,26 +415,26 @@ import json
 # if __name__ == "__main__":
 #     create_threads()
 
-# "Сортировка Телеграм"
-# #
-# c = open("all","r",encoding="utf8")
-# a = open("numb","a",encoding="utf8")
-# b = open("user","a",encoding="utf8")
-# for i in c:
-#     if i[0] == "@":
-#         b.write(i)
-#     elif i[0] == "+":
-#         a.write(i)
+"Сортировка Телеграм"
 #
-# c.close()
-# b.close()
-# a.close()
-""" """
+c = open("all","r",encoding="utf8")
+a = open("numb","a",encoding="utf8")
+b = open("user","a",encoding="utf8")
+for i in c:
+    if i[0] == "@":
+        b.write(i)
+    elif i[0] == "+":
+        a.write(i)
 
-n, m = map(int, input().split(";"))
-print(n)
-print(m)
+c.close()
+b.close()
+a.close()
+"""split the entered text into two variables """
 
+# n, m = map(int, input().split(";"))
+# print(n)
+# print(m)
+#
 
 
 # import requests
