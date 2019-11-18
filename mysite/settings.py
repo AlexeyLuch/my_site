@@ -35,22 +35,23 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = [
     'jet',
-	'poll.apps.PollConfig',
+    'poll.apps.PollConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'allauth',
+    'allauth',
     'allauth.account',
     'allauth.socialaccount',
-	'django.contrib.sites',
-	'bootstrap3',
-	'bootstrapform',
+    'django.contrib.sites',
+    'bootstrap3',
+    'bootstrapform',
     'channels',
 
     'chat_channel',
+    'ref_pages',
 
 
 ]

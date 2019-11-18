@@ -154,7 +154,7 @@ def get_hdata():
 
 
 def chat(request):
-    out = "her"
+    out = "You need help?"
     if "your_name" in request.POST:
         words, labels, training, output = get_hdata()
         results = get_model().predict([bag_of_words(request.POST["your_name"], words)])
@@ -164,7 +164,7 @@ def chat(request):
         for tg in get_data()["intents"]:
             if tg['tag'] == tag:
                 responses = tg['responses']
-        out=random.choice(responses)
+        out = random.choice(responses)
 
     return render(request, 'poll/chat.html',context={'name':out})
 
@@ -239,8 +239,8 @@ def all(request):
             all1 = c["country"]
             country = t[all1]
         except:
-            all = "Cherkasy"
-            country = "Ukraine"
+            all = "Хогвардс"
+            country = "Пандора"
             pass
         # Unique_set.objects.create(UserAgent=user_agent, IP_user=ip)
         asq = Unique_set.objects.get_or_create(UserAgent=user_agent, IP_user=ip)
@@ -248,11 +248,6 @@ def all(request):
             data = {"ip": ip, "user_agent": user_agent, "name_host": name_host, "method": method,"sity": all,"country": country}
             return render(request, 'poll/all.html', context=data)
 
-
-def basic_one(request):
-    view = "basic_one"
-    html = "<html><body> this is %s view </body></html>" % view
-    return HttpResponse(html)
 
 
 def template_two(request):
