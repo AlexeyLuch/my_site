@@ -448,11 +448,11 @@
 # import subprocess
 #
 # subprocess.call("python manage.py runserver",shell=True,cwd="/home/usr/PycharmProjects/My_Site/my_site",)
-import random
-string_sub = "Добрый день "
-string_fun = ["Переходите на ", "Заходите на ", " Посетите наш форум "]
-messedge = random.choice(string_fun)+ "http://mmgp.ru " +' \nВсегда свежие новости в мире финансов и инвестиций\n''Актуальная информация с фондовых рынков.\n''Советы и прогнозы экспертов'
-print(messedge)
+# import random
+# string_sub = "Добрый день "
+# string_fun = ["Переходите на ", "Заходите на ", " Посетите наш форум "]
+# messedge = random.choice(string_fun)+ "http://mmgp.ru " +' \nВсегда свежие новости в мире финансов и инвестиций\n''Актуальная информация с фондовых рынков.\n''Советы и прогнозы экспертов'
+# print(messedge)
 
 # print(test_data.shape)
 # print(test_data.head(5))
