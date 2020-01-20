@@ -42,7 +42,6 @@
 # intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="Wakanda", Age=25, Phone=9876543210)
 #
 """"""""""""""""""""""""""""""""""""
-from urllib import request
 
 """keyword"""
 
@@ -222,7 +221,6 @@ from urllib import request
 #
 # print(response.content)
 # print(response.json())
-import json
 
 # some JSON:
 
@@ -417,18 +415,18 @@ import json
 
 "Сортировка Телеграм"
 #
-c = open("all","r",encoding="utf8")
-a = open("numb","a",encoding="utf8")
-b = open("user","a",encoding="utf8")
-for i in c:
-    if i[0] == "@":
-        b.write(i)
-    elif i[0] == "+":
-        a.write(i)
-
-c.close()
-b.close()
-a.close()
+# c = open("all","r",encoding="utf8")
+# a = open("numb","a",encoding="utf8")
+# b = open("user","a",encoding="utf8")
+# for i in c:
+#     if i[0] == "@":
+#         b.write(i)
+#     elif i[0] == "+":
+#         a.write(i)
+#
+# c.close()
+# b.close()
+# a.close()
 """split the entered text into two variables """
 
 # n, m = map(int, input().split(";"))
@@ -447,3 +445,53 @@ a.close()
 # print(t[all1])
 # print(all)
 # print(all1)
+# import subprocess
+#
+# subprocess.call("python manage.py runserver",shell=True,cwd="/home/usr/PycharmProjects/My_Site/my_site",)
+# import random
+# string_sub = "Добрый день "
+# string_fun = ["Переходите на ", "Заходите на ", " Посетите наш форум "]
+# messedge = random.choice(string_fun)+ "http://mmgp.ru " +' \nВсегда свежие новости в мире финансов и инвестиций\n''Актуальная информация с фондовых рынков.\n''Советы и прогнозы экспертов'
+# print(messedge)
+
+# print(test_data.shape)
+# print(test_data.head(5))
+
+# arr = ([[1,2,3],
+#        [4,5,6]])
+# a = np.array(arr)
+# print(a[:,1:])
+""" csv img"""
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# test_data = pd.read_csv("mnist_test.csv",header=None)
+#
+#
+# image_row = test_data.values[121, 1:]
+# img = image_row.reshape(28,28)
+# imgplot = plt.imshow(img)
+# lum_img = img[:, 1:]
+# plt.imshow(lum_img,cmap="Spectral")
+# plt.savefig('plot.png',)
+#
+""" change the img"""
+
+# import matplotlib.pyplot as plt
+# import matplotlib.image as mpimg
+#
+# img = mpimg.imread('stinkbug.png')
+# lum_img = img[:, :, 0]
+# fig = plt.figure()
+# a = fig.add_subplot(1, 2, 1)
+#
+# imgplot = plt.imshow(lum_img)
+# a.set_title('Before')
+# plt.colorbar(ticks=[0.1, 0.3, 0.5, 0.7], orientation='horizontal')
+# a = fig.add_subplot(1, 2, 2)
+#
+# imgplot = plt.imshow(lum_img)
+# imgplot.set_clim(0.0, 0.7)
+# a.set_title('After')
+# plt.colorbar(ticks=[0.1, 0.3, 0.5, 0.7], orientation='horizontal')
+#
+# plt.show()

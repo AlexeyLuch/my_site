@@ -1,0 +1,16 @@
+    version: '2'
+    services:
+      new:
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        ports:
+          - '8000:8000'
+#  python:
+#    image: python:3.5
+#    volumes:
+#      - ./new:/new
+#    command: sleep infinity
+##    command: cd /home/luch/PycharmProjects/myaite/new && pip install -r requirements.txt && python manage.py runserver
+##    command: python3 manage.py runserver 0.0.0.0:8000
+##    ports:
+##      - '8000:8000'

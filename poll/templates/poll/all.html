@@ -23,6 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<style> img,a[href] { cursor: url(static/img/gun.png), wait; } </style>-->
 {% include "poll/navbar1.html" %}
+
 <!---->
 </head>
 
@@ -34,7 +35,6 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
             </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
@@ -44,7 +44,6 @@
                   <p>Money Money.</p>
                 </div>
               </div>
-
               <div class="item">
                 <img style="height:50%;margin-top:-100px" src="{% static 'img/js_main.jpg' %}" alt="Image">
                 <div class="carousel-caption">
@@ -53,7 +52,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -64,20 +62,7 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
-
-
         <div class="container text-center">
-            <ul id="navbar">
-              <a href="/support" class="btn btn-dark">Support / Pagination</a>
-              <a href="/chat" class="btn btn-warning">Чат</a>
-              <a href="/basicview" class="btn btn-danger">basic_views</a>
-                <button type="button" class="btn btn-lg btn-danger" style="width:244px;border-radius: 3px;" id= "popover" data-toggle="popover" title="Popover title" data-content="It is my firs popover. It's very engaging. Right?">Click to toggle popover</button></ul>
-              <script type="text/javascript">
-              $(function () {
-          $('[data-toggle="popover"]').popover()
-        })
-        </script>
-          <h3 style="color:#ffffff">ОСТАВЛЯЙ КОММЕНТАРИИ ПОСЛЕ ИЗМЕНЕНИЙ</h3>
           <div class="container" id="parameters">
 
               <div class="row">
@@ -93,14 +78,11 @@
                 <div class="view overlay z-depth-1-half">
                 <div class="well">
                  <p><h4>Your port: <b>{{ name_host }}</b></h4></p>
-
                 </div>
                     <div class="mask rgba-white-light"></div>
                 </div>
               </div>
               <div class="col-sm-10 col-md-5">
-
-
                 <div class="well">
                  <p><h4>Country / sity : <b>{{ country }} / {{ sity }}</b></h4></p>
 
@@ -244,7 +226,6 @@
         <script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
     </div>
 </body>
-
 
 <!--<script>-->
 <!--window.onbeforeunload = function() {-->
